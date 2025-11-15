@@ -79,8 +79,8 @@ Antes de clonar y ejecutar el proyecto, asegúrate de tener instalado:
 ### Clonar el Repositorio
 
 ```bash
-git clone https://github.com/Sergiovz/TS-Patrones-Dise-o.git
-cd TS-Patrones-Dise-o
+git clone https://github.com/Sergiovz/TLP4-patrones-de-disenio-typescript.git
+cd TLP4-patrones-de-disenio-typescript
 ```
 
 ### Instalar Dependencias
@@ -101,6 +101,23 @@ O ejecutar directamente con npx:
 
 ```bash
 npx tsx src/app.ts
+```
+comentar los patrones que no se quieran ejecutar en el archivo `src/app.ts` y sus importciones.
+
+```bash
+Ejemplo:
+
+ import { runObserver } from "./observer";
+// import { runAdapter } from "./adapter";
+// import { runSingleton } from "./singleton";
+// import { runFactory } from "./factory";
+
+(async () => {
+  await runObserver();
+  // await runAdapter();
+  // await runSingleton();
+  // await runFactory();
+})();
 ```
 
 ### Salida Esperada
